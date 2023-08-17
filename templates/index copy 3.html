@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <input class="screen" id="code">
+
+    <section class="calc-buttons">
+    <form id="submit_task">       
+         <div class="calc-buttons-row">
+        </form>
+            <button type="button" class="calc-button" onclick="document.getElementById('code').value=document.getElementById('code').value + '-/+';"> -/+</button>
+            <button type="button" class="calc-button" onclick="document.getElementById('code').value=document.getElementById('code').value + '%';">&percnt;</button>
+            <button type="button" class="calc-button" onclick="document.getElementById('code').value=document.getElementById('code').value.slice(0, -1);">&larr;</button>
+            <form action= "{{url_for('home')}}" method='GET'> 
+                <button  class="calc-button" type='submit' value="      C      ">CLEAR</button>
+            </form>
+            <button type="button" class="calc-button" onclick="document.getElementById('code').value=document.getElementById('code').value + '/';">&divide;</button>
+        </div>
+        <div class="calc-buttons-row">
+            <button type="button" class="calc-button" onclick="document.getElementById('code').value=document.getElementById('code').value + '4';">7</button>
+            <button type="button" class="calc-button" onclick="document.getElementById('code').value=document.getElementById('code').value + '5';">8</button>
+            <button type="button" class="calc-button" onclick="document.getElementById('code').value=document.getElementById('code').value + '6';">9</button>
+            <button type="button" class="calc-button" onclick="document.getElementById('code').value=document.getElementById('code').value + '*';">&times;</button>
+        </div>
+        <div class="calc-buttons-row">
+            <button type="button" class="calc-button" onclick="document.getElementById('code').value=document.getElementById('code').value + '4';">4</button>
+            <button type="button" class="calc-button" onclick="document.getElementById('code').value=document.getElementById('code').value + '5';">5</button>
+            <button type="button" class="calc-button" onclick="document.getElementById('code').value=document.getElementById('code').value + '6';">6</button>
+            <button type="button" class="calc-button" onclick="document.getElementById('code').value=document.getElementById('code').value + '-';">&minus;</button>
+        </div>
+        <div class="calc-buttons-row">
+            <button type="button" class="calc-button" onclick="document.getElementById('code').value=document.getElementById('code').value + '4';">1</button>
+            <button type="button" class="calc-button" onclick="document.getElementById('code').value=document.getElementById('code').value + '5';">2</button>
+            <button type="button" class="calc-button" onclick="document.getElementById('code').value=document.getElementById('code').value + '6';">3</button>
+            <button type="button" class="calc-button" onclick="document.getElementById('code').value=document.getElementById('code').value + '+';">&plus;</button>
+        </div>
+        <div class="calc-buttons-row">
+            <button type="button" class="calc-button zero" onclick="document.getElementById('code').value=document.getElementById('code').value + '0';">0</button>
+            <button type="button" class="calc-button" onclick="document.getElementById('code').value=document.getElementById('code').value + '.';">.</button>
+            <button type="submit" form="submit_task" class="calc-button" onclick="SubmitEvent">=</button>
+        </div>
+                
+    </section>
+    </div>
+     
+</body>
+</html><div class="calc-buttons-row-vertical ml-4 mt-4" role="group" aria-label="Basic example">
+  

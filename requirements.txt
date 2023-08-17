@@ -1,0 +1,4 @@
+venv
+flask 
+re
+gunicorn

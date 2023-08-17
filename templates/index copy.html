@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="screen">
+            0
+        </section>
+
+        <section class="calc-buttons">
+
+
+            <div class="calc-buttons-row ">
+                <!-- <h3>Our Flask Buttons</h3>
+                    <form method="post" action="/">
+                        <input type="submit" value="VALUE1" name="action1"/>
+                        <input type="submit" value="VALUE2" name="action2" />
+                    </form>--> 
+                <form method="post" action="/">
+                <button class="calc-button double ce" type="submit" value="C" name="action1">C
+                
+                </button>
+
+               <!-- <button class="calc-button double ce" value="C" formmethod="post" name="delete">
+                 C
+                </button>--> 
+
+                <button class="calc-button ">
+                    -/+
+                </button>
+                <button class="calc-button ">
+                    &percnt;
+                </button>
+                <button class="calc-button ">
+                    &larr;
+                </button>
+                
+                <button class="calc-button ">
+                    &divide
+                </button>
+                </form>
+            </div>
+            <div class="calc-buttons-row">
+                <button class="calc-button ">
+                    7
+                </button>
+                <button class="calc-button ">
+                    8
+                </button>
+                <button class="calc-button ">
+                    9
+                </button>
+                <button class="calc-button ">
+                    &times
+                </button>
+                                
+            </div>
+            <div class="calc-buttons-row">
+                <button class="calc-button ">
+                    4
+                </button>
+                <button class="calc-button ">
+                    5
+                </button>
+                <button class="calc-button ">
+                    6
+                </button>
+                <button class="calc-button ">
+                    &minus;
+                </button>
+            </div>
+            <div class="calc-buttons-row">
+                <button class="calc-button ">
+                    1
+                </button>
+                <button class="calc-button ">
+                    2
+                </button>
+                <button class="calc-button ">
+                    3
+                </button>
+                <button class="calc-button ">
+                    &plus;
+                </button>       
+            </div>
+            <div class="calc-buttons-row ">
+                <button class="calc-button zero">
+                    0
+                </button>
+                <button class="calc-button ">
+                    .
+                </button>
+                <button class="calc-button ">
+                    =
+                </button>
+                
+                
+            </div>
+        </section>
+    </div>
+    
+</body>
+</html>
