@@ -134,6 +134,6 @@ def create_app():
             problem_data = request.form["data_to_cal"]
             
         return app
-
- if __name__ == '__main__':
-     app.run(port=4495, debug=True)
+        
+if __name__ == '__main__':
+    app.run(port=4495, debug=True)
